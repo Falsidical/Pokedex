@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pokedex.css" />
+    <script src="pokedex.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="top-container">
+        <div class="top">
+          <div class="balls">
+            <div class="c1">
+              <div class="c2"><div class="c6"></div></div>
+            </div>
+            <div class="c3"><div class="c7"></div></div>
+            <div class="c4"><div class="c7"></div></div>
+            <div class="c5"><div class="c7"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-1">
+        <div class="screen-2">
+          <div class="screen-balls">
+            <div class="c9"></div>
+            <div class="c9"></div>
+          </div>
+          <div class="screen-text">
+            <div class="screen-container">
+              <h2>Pokedex</h2>
+              <h1>OFF</h1>
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div class="screen-end">
+            <div class="c8"></div>
+            <div class="lines">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <input type="text" placeholder="Pokemon or ID" id="searchInput" />
+        <button onclick="searchPokemon()" class="select search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </button>
+        <button onclick="changePokemon(-1)" class="select"><</button>
+        <button onclick="changePokemon(1)" class="select">></button>
+      </div>
+    </div>
+  </body>
+</html>
