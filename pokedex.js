@@ -19,7 +19,7 @@ async function getPokemon(pokemonID) {
 async function displayPokemon(pokemonNumber) {
   const pokemon = await getPokemon(pokemonNumber);
   if (!pokemon) {
-    setInvalid();
+    setInvalidPokemon();
     return;
   }
   numberText.textContent = `Pokemon #${pokemon.id}`;
@@ -55,10 +55,14 @@ function animate(animation) {
 }
 
 function searchPokemon() {
+  if (!input.value) {
+    setInvalidPokemon();
+    return;
+  }
   displayPokemon(input.value);
 }
 
-function setInvalid() {
+function setInvalidPokemon() {
   numberText.textContent = `Error`;
   pokemonNameText.textContent = 'Not Found';
   pokemonImage.src = 'img/error.png';
