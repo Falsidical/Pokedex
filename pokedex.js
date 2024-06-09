@@ -4,6 +4,7 @@ const pokemonImage = document.querySelector('img');
 const ball = document.querySelector('.c8');
 const screen = document.querySelector('.screen-container');
 const input = document.querySelector('#searchInput');
+const indicator = document.querySelector('.indicator');
 
 let currentPokemon = 0;
 
@@ -26,6 +27,7 @@ async function displayPokemon(pokemonNumber) {
   pokemonNameText.textContent = pokemon.name;
   pokemonImage.src = pokemon.sprites.front_default;
   currentPokemon = pokemon.id;
+  indicator.textContent = currentPokemon;
 }
 
 async function changePokemon(number) {

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
 
+@font-face {
+  font-family: 'DSEG7 Modern';
+  src: url('DSEG7Modern-Bold.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -286,4 +291,16 @@ input {
   100% {
     transform: translateX(0px);
   }
+}
+
+.indicator {
+  background-color: #222;
+  position: absolute;
+  top: 80px;
+  right: 26px;
+  width: 64px;
+  padding: 4px 4px;
+  font-family: 'DSEG7 Modern';
+  text-align: end;
+  border: 3px solid rgb(168, 0, 0);
 }
